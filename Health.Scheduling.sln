@@ -3,9 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2E55A8A7-BF59-44AD-B605-63AEDBA79F7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1371FB1C-2876-4E0B-A28A-90297B17B457}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E38B7A42-273E-42D7-A1E4-06CBC00BE587}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{5EF18951-18A2-4B10-915D-C9D05FB854CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health.Scheduling.UI", "src\Web\Health.Scheduling.UI\Health.Scheduling.UI.csproj", "{FE7B9E1C-0C82-4BF2-9643-E052A9C93439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health.Scheduling.AppServices", "src\Services\Health.Scheduling.AppServices\Health.Scheduling.AppServices.csproj", "{F9960E24-32AE-478C-92AB-CDFFFC830876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health.Scheduling.Domain", "src\Services\Health.Scheduling.Domain\Health.Scheduling.Domain.csproj", "{8E58FB8B-7F82-47AC-B258-DFE317F51DB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Health.Scheduling.Infra", "src\Services\Health.Scheduling.Infra\Health.Scheduling.Infra.csproj", "{E7ACCE5E-891A-48FE-9027-1FCB3F529824}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE7B9E1C-0C82-4BF2-9643-E052A9C93439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE7B9E1C-0C82-4BF2-9643-E052A9C93439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE7B9E1C-0C82-4BF2-9643-E052A9C93439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE7B9E1C-0C82-4BF2-9643-E052A9C93439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9960E24-32AE-478C-92AB-CDFFFC830876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9960E24-32AE-478C-92AB-CDFFFC830876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9960E24-32AE-478C-92AB-CDFFFC830876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9960E24-32AE-478C-92AB-CDFFFC830876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E58FB8B-7F82-47AC-B258-DFE317F51DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E58FB8B-7F82-47AC-B258-DFE317F51DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E58FB8B-7F82-47AC-B258-DFE317F51DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E58FB8B-7F82-47AC-B258-DFE317F51DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7ACCE5E-891A-48FE-9027-1FCB3F529824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7ACCE5E-891A-48FE-9027-1FCB3F529824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7ACCE5E-891A-48FE-9027-1FCB3F529824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7ACCE5E-891A-48FE-9027-1FCB3F529824}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E38B7A42-273E-42D7-A1E4-06CBC00BE587} = {2E55A8A7-BF59-44AD-B605-63AEDBA79F7E}
+		{5EF18951-18A2-4B10-915D-C9D05FB854CB} = {2E55A8A7-BF59-44AD-B605-63AEDBA79F7E}
+		{FE7B9E1C-0C82-4BF2-9643-E052A9C93439} = {5EF18951-18A2-4B10-915D-C9D05FB854CB}
+		{F9960E24-32AE-478C-92AB-CDFFFC830876} = {E38B7A42-273E-42D7-A1E4-06CBC00BE587}
+		{8E58FB8B-7F82-47AC-B258-DFE317F51DB8} = {E38B7A42-273E-42D7-A1E4-06CBC00BE587}
+		{E7ACCE5E-891A-48FE-9027-1FCB3F529824} = {E38B7A42-273E-42D7-A1E4-06CBC00BE587}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {762BF8A3-47FF-4821-90B8-D63BB8F91E60}
